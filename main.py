@@ -186,11 +186,10 @@ def main():
     print(f"Average generation throughput: {total_gen/total_latency} token/s")
     print(f"Requests per second: {requests/total_latency} request/s")
     print('---------------------------')
-
-    if verbose:
-        print("Saving each request's information to output file: {}")
     
     if output_file != None:
+        if verbose:
+            print(f"Saving each request's information to output file: {output_file}")
         scheduler.saveOutput(output_file)
     
 
