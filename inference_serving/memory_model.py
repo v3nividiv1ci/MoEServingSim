@@ -60,6 +60,11 @@ class MemoryModel():
         # lm_head
         _, lm_head, _ = calculateSizes(self.model, 'lm_head', 1)
         weight += lm_head
+        
+        # TODO (6031):add moe
+        # moe
+        # _, moe, _ = calculateSizes(self.model, 'moe', 1)
+        # weight += moe
 
         if self.verbose:
             print(f"Memory: model weight {weight//1024//1024}MB loaded")
@@ -182,4 +187,7 @@ def calculateSizes(model, layer_name, length, init=False, fp=2):
         input_size = 0
         weight_size = 0
         output_size = 0
+
+    # TODO (6031):add moe
+    
     return input_size, weight_size, output_size

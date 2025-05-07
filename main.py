@@ -105,7 +105,6 @@ def main():
     # Make Event trace
     generateEvent(scheduler.getFirstArrivalTime())
     # Make Chakra Grapth
-    generateGraph(None, hardware, npu_num, event=True)
     # set first workload file
     workload = getWorkload(None, hardware, event=True)
     # run subprocess

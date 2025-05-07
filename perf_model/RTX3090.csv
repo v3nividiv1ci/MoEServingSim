@@ -642,7 +642,7 @@ RTX3090,gpt3-6.7b,ln_f,1,58,15944
 RTX3090,gpt3-6.7b,vocab_embedding,1,58,19505
 RTX3090,gpt3-6.7b,post_layernorm,1,58,12142
 RTX3090,gpt3-6.7b,input_layernorm,1,58,11754
-RTX3090,gpt3-6.7b,attention/wrapper,1,58,7480
+RTX3090,gpt3-6.7b,attent1ion/wrapper,,58,7480
 RTX3090,gpt3-6.7b,attention/dense,1,58,2701
 RTX3090,gpt3-6.7b,attention/qkv,1,58,4820
 RTX3090,gpt3-6.7b,lm_head,1,58,2563

@@ -1,0 +1,1092 @@
+Memory: model weight 13074MB loaded
+Scheduler: added 10 requests to LLMServingSim
+Control: sys[0] iteration 0 finished, 46926808 cycles
+Memory: used: 13709377536 load: 6291456 after: 13715668992
+Scheduler: scheduling new batch #0 to sys[0]
+Scheduler: batch #0 has request #: 0 
+Trace: batch #0: model: gpt3-6.7b, num requests: 1, total length: 10, prompt/kv_cache length: 10
+Control: sys[0] iteration 1 finished, 53498605 cycles
+Scheduler: batch #0 is done
+Scheduler: scheduling new batch #1 to sys[0]
+Scheduler: batch #1 has request #: 0 
+Trace: batch #1: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 11
+Control: sys[0] iteration 2 finished, 59863297 cycles
+Scheduler: batch #1 is done
+Memory: used: 13715668992 load: 2097152 after: 13717766144
+Scheduler: scheduling new batch #2 to sys[0]
+Scheduler: batch #2 has request #: 0 
+Trace: batch #2: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 12
+Control: sys[0] iteration 3 finished, 66152981 cycles
+Scheduler: batch #2 is done
+Scheduler: scheduling new batch #3 to sys[0]
+Scheduler: batch #3 has request #: 0 
+Trace: batch #3: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 13
+Control: sys[0] iteration 4 finished, 72445225 cycles
+Scheduler: batch #3 is done
+Scheduler: scheduling new batch #4 to sys[0]
+Scheduler: batch #4 has request #: 0 
+Trace: batch #4: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 14
+Control: sys[0] iteration 5 finished, 78737437 cycles
+Scheduler: batch #4 is done
+Scheduler: scheduling new batch #5 to sys[0]
+Scheduler: batch #5 has request #: 0 
+Trace: batch #5: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 15
+Control: sys[0] iteration 6 finished, 85074481 cycles
+Scheduler: batch #5 is done
+Memory: used: 13717766144 load: 2097152 after: 13719863296
+Scheduler: scheduling new batch #6 to sys[0]
+Scheduler: batch #6 has request #: 0 
+Trace: batch #6: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 16
+Control: sys[0] iteration 7 finished, 91428869 cycles
+Scheduler: batch #6 is done
+Scheduler: scheduling new batch #7 to sys[0]
+Scheduler: batch #7 has request #: 0 
+Trace: batch #7: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 17
+Control: sys[0] iteration 8 finished, 97732441 cycles
+Scheduler: batch #7 is done
+Scheduler: scheduling new batch #8 to sys[0]
+Scheduler: batch #8 has request #: 0 
+Trace: batch #8: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 18
+Control: sys[0] iteration 9 finished, 104018637 cycles
+Scheduler: batch #8 is done
+Scheduler: scheduling new batch #9 to sys[0]
+Scheduler: batch #9 has request #: 0 
+Trace: batch #9: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 19
+Control: sys[0] iteration 10 finished, 110350657 cycles
+Scheduler: batch #9 is done
+Memory: used: 13719863296 load: 2097152 after: 13721960448
+Scheduler: scheduling new batch #10 to sys[0]
+Scheduler: batch #10 has request #: 0 
+Trace: batch #10: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 20
+Control: sys[0] iteration 11 finished, 116670549 cycles
+Scheduler: batch #10 is done
+Scheduler: scheduling new batch #11 to sys[0]
+Scheduler: batch #11 has request #: 0 
+Trace: batch #11: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 21
+Control: sys[0] iteration 12 finished, 122978025 cycles
+Scheduler: batch #11 is done
+Scheduler: scheduling new batch #12 to sys[0]
+Scheduler: batch #12 has request #: 0 
+Trace: batch #12: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 22
+Control: sys[0] iteration 13 finished, 129264221 cycles
+Scheduler: batch #12 is done
+Scheduler: scheduling new batch #13 to sys[0]
+Scheduler: batch #13 has request #: 0 
+Trace: batch #13: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 23
+Control: sys[0] iteration 14 finished, 135568465 cycles
+Scheduler: batch #13 is done
+Memory: used: 13721960448 load: 2097152 after: 13724057600
+Scheduler: scheduling new batch #14 to sys[0]
+Scheduler: batch #14 has request #: 0 
+Trace: batch #14: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 24
+Control: sys[0] iteration 15 finished, 141840645 cycles
+Scheduler: batch #14 is done
+Scheduler: scheduling new batch #15 to sys[0]
+Scheduler: batch #15 has request #: 0 
+Trace: batch #15: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 25
+Control: sys[0] iteration 16 finished, 148181241 cycles
+Scheduler: batch #15 is done
+Scheduler: scheduling new batch #16 to sys[0]
+Scheduler: batch #16 has request #: 0 
+Trace: batch #16: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 26
+Control: sys[0] iteration 17 finished, 154454253 cycles
+Scheduler: batch #16 is done
+Scheduler: scheduling new batch #17 to sys[0]
+Scheduler: batch #17 has request #: 0 
+Trace: batch #17: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 27
+Control: sys[0] iteration 18 finished, 160734337 cycles
+Scheduler: batch #17 is done
+Memory: used: 13724057600 load: 2097152 after: 13726154752
+Scheduler: scheduling new batch #18 to sys[0]
+Scheduler: batch #18 has request #: 0 
+Trace: batch #18: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 28
+Control: sys[0] iteration 19 finished, 167029621 cycles
+Scheduler: batch #18 is done
+Scheduler: scheduling new batch #19 to sys[0]
+Scheduler: batch #19 has request #: 0 
+Trace: batch #19: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 29
+Control: sys[0] iteration 20 finished, 173353897 cycles
+Scheduler: batch #19 is done
+Scheduler: scheduling new batch #20 to sys[0]
+Scheduler: batch #20 has request #: 0 
+Trace: batch #20: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 30
+Control: sys[0] iteration 21 finished, 179716061 cycles
+Scheduler: batch #20 is done
+Scheduler: scheduling new batch #21 to sys[0]
+Scheduler: batch #21 has request #: 0 
+Trace: batch #21: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 31
+Control: sys[0] iteration 22 finished, 186068145 cycles
+Scheduler: batch #21 is done
+Memory: used: 13726154752 load: 2097152 after: 13728251904
+Scheduler: scheduling new batch #22 to sys[0]
+Scheduler: batch #22 has request #: 0 
+Trace: batch #22: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 32
+Control: sys[0] iteration 23 finished, 192332677 cycles
+Scheduler: batch #22 is done
+Scheduler: scheduling new batch #23 to sys[0]
+Scheduler: batch #23 has request #: 0 
+Trace: batch #23: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 33
+Control: sys[0] iteration 24 finished, 198629497 cycles
+Scheduler: batch #23 is done
+Scheduler: scheduling new batch #24 to sys[0]
+Scheduler: batch #24 has request #: 0 
+Trace: batch #24: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 34
+Control: sys[0] iteration 25 finished, 204954829 cycles
+Scheduler: batch #24 is done
+Scheduler: scheduling new batch #25 to sys[0]
+Scheduler: batch #25 has request #: 0 
+Trace: batch #25: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 35
+Control: sys[0] iteration 26 finished, 211234049 cycles
+Scheduler: batch #25 is done
+Memory: used: 13728251904 load: 2097152 after: 13730349056
+Scheduler: scheduling new batch #26 to sys[0]
+Scheduler: batch #26 has request #: 0 
+Trace: batch #26: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 36
+Control: sys[0] iteration 27 finished, 217571669 cycles
+Scheduler: batch #26 is done
+Scheduler: scheduling new batch #27 to sys[0]
+Scheduler: batch #27 has request #: 0 
+Trace: batch #27: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 37
+Control: sys[0] iteration 28 finished, 223857065 cycles
+Scheduler: batch #27 is done
+Scheduler: scheduling new batch #28 to sys[0]
+Scheduler: batch #28 has request #: 0 
+Trace: batch #28: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 38
+Control: sys[0] iteration 29 finished, 230183005 cycles
+Scheduler: batch #28 is done
+Scheduler: scheduling new batch #29 to sys[0]
+Scheduler: batch #29 has request #: 0 
+Trace: batch #29: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 39
+Control: sys[0] iteration 30 finished, 236495889 cycles
+Scheduler: batch #29 is done
+Memory: used: 13730349056 load: 2097152 after: 13732446208
+Scheduler: scheduling new batch #30 to sys[0]
+Scheduler: batch #30 has request #: 0 
+Trace: batch #30: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 40
+Control: sys[0] iteration 31 finished, 242862757 cycles
+Scheduler: batch #30 is done
+Scheduler: scheduling new batch #31 to sys[0]
+Scheduler: batch #31 has request #: 0 
+Trace: batch #31: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 41
+Control: sys[0] iteration 32 finished, 249155481 cycles
+Scheduler: batch #31 is done
+Scheduler: scheduling new batch #32 to sys[0]
+Scheduler: batch #32 has request #: 0 
+Trace: batch #32: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 42
+Control: sys[0] iteration 33 finished, 255438893 cycles
+Scheduler: batch #32 is done
+Scheduler: scheduling new batch #33 to sys[0]
+Scheduler: batch #33 has request #: 0 
+Trace: batch #33: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 43
+Control: sys[0] iteration 34 finished, 261729825 cycles
+Scheduler: batch #33 is done
+Memory: used: 13732446208 load: 2097152 after: 13734543360
+Scheduler: scheduling new batch #34 to sys[0]
+Scheduler: batch #34 has request #: 0 
+Trace: batch #34: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 44
+Control: sys[0] iteration 35 finished, 268009237 cycles
+Scheduler: batch #34 is done
+Scheduler: scheduling new batch #35 to sys[0]
+Scheduler: batch #35 has request #: 0 
+Trace: batch #35: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 45
+Control: sys[0] iteration 36 finished, 274330729 cycles
+Scheduler: batch #35 is done
+Scheduler: scheduling new batch #36 to sys[0]
+Scheduler: batch #36 has request #: 0 
+Trace: batch #36: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 46
+Control: sys[0] iteration 37 finished, 280640797 cycles
+Scheduler: batch #36 is done
+Scheduler: scheduling new batch #37 to sys[0]
+Scheduler: batch #37 has request #: 0 
+Trace: batch #37: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 47
+Control: sys[0] iteration 38 finished, 286912753 cycles
+Scheduler: batch #37 is done
+Memory: used: 13734543360 load: 2097152 after: 13736640512
+Scheduler: scheduling new batch #38 to sys[0]
+Scheduler: batch #38 has request #: 0 
+Trace: batch #38: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 48
+Control: sys[0] iteration 39 finished, 293177701 cycles
+Scheduler: batch #38 is done
+Scheduler: scheduling new batch #39 to sys[0]
+Scheduler: batch #39 has request #: 0 
+Trace: batch #39: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 49
+Control: sys[0] iteration 40 finished, 299461209 cycles
+Scheduler: batch #39 is done
+Scheduler: scheduling new batch #40 to sys[0]
+Scheduler: batch #40 has request #: 0 
+Trace: batch #40: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 50
+Control: sys[0] iteration 41 finished, 305803437 cycles
+Scheduler: batch #40 is done
+Scheduler: scheduling new batch #41 to sys[0]
+Scheduler: batch #41 has request #: 0 
+Trace: batch #41: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 51
+Control: sys[0] iteration 42 finished, 312103873 cycles
+Scheduler: batch #41 is done
+Memory: used: 13736640512 load: 2097152 after: 13738737664
+Scheduler: scheduling new batch #42 to sys[0]
+Scheduler: batch #42 has request #: 0 
+Trace: batch #42: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 52
+Control: sys[0] iteration 43 finished, 318387669 cycles
+Scheduler: batch #42 is done
+Scheduler: scheduling new batch #43 to sys[0]
+Scheduler: batch #43 has request #: 0 
+Trace: batch #43: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 53
+Control: sys[0] iteration 44 finished, 324679977 cycles
+Scheduler: batch #43 is done
+Scheduler: scheduling new batch #44 to sys[0]
+Scheduler: batch #44 has request #: 0 
+Trace: batch #44: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 54
+Control: sys[0] iteration 45 finished, 330974045 cycles
+Scheduler: batch #44 is done
+Scheduler: scheduling new batch #45 to sys[0]
+Scheduler: batch #45 has request #: 0 
+Trace: batch #45: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 55
+Control: sys[0] iteration 46 finished, 337240881 cycles
+Scheduler: batch #45 is done
+Memory: used: 13738737664 load: 2097152 after: 13740834816
+Scheduler: scheduling new batch #46 to sys[0]
+Scheduler: batch #46 has request #: 0 
+Trace: batch #46: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 56
+Control: sys[0] iteration 47 finished, 343548293 cycles
+Scheduler: batch #46 is done
+Scheduler: scheduling new batch #47 to sys[0]
+Scheduler: batch #47 has request #: 0 
+Trace: batch #47: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 57
+Control: sys[0] iteration 48 finished, 349820857 cycles
+Scheduler: batch #47 is done
+Memory: used: 13740834816 load: 12582912 after: 13753417728
+Scheduler: scheduling new batch #48 to sys[0]
+Scheduler: batch #48 has request #: 0 1 
+Trace: batch #48: model: gpt3-6.7b, num requests: 2, total length: 23, prompt/kv_cache length: 80
+Control: sys[0] iteration 49 finished, 356698978 cycles
+Scheduler: batch #48 is done
+Scheduler: scheduling new batch #49 to sys[0]
+Scheduler: batch #49 has request #: 0 1 
+Trace: batch #49: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 82
+Control: sys[0] iteration 50 finished, 362827305 cycles
+Scheduler: batch #49 is done
+Memory: used: 13753417728 load: 4194304 after: 13757612032
+Scheduler: scheduling new batch #50 to sys[0]
+Scheduler: batch #50 has request #: 0 1 
+Trace: batch #50: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 84
+Control: sys[0] iteration 51 finished, 368905680 cycles
+Scheduler: batch #50 is done
+Scheduler: scheduling new batch #51 to sys[0]
+Scheduler: batch #51 has request #: 0 1 
+Trace: batch #51: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 86
+Control: sys[0] iteration 52 finished, 375042359 cycles
+Scheduler: batch #51 is done
+Scheduler: scheduling new batch #52 to sys[0]
+Scheduler: batch #52 has request #: 0 1 
+Trace: batch #52: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 88
+Control: sys[0] iteration 53 finished, 381117918 cycles
+Scheduler: batch #52 is done
+Scheduler: scheduling new batch #53 to sys[0]
+Scheduler: batch #53 has request #: 0 1 
+Trace: batch #53: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 90
+Control: sys[0] iteration 54 finished, 387358469 cycles
+Scheduler: batch #53 is done
+Memory: used: 13757612032 load: 4194304 after: 13761806336
+Scheduler: scheduling new batch #54 to sys[0]
+Scheduler: batch #54 has request #: 0 1 
+Trace: batch #54: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 92
+Control: sys[0] iteration 55 finished, 393443340 cycles
+Scheduler: batch #54 is done
+Scheduler: scheduling new batch #55 to sys[0]
+Scheduler: batch #55 has request #: 0 1 
+Trace: batch #55: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 94
+Control: sys[0] iteration 56 finished, 399557107 cycles
+Scheduler: batch #55 is done
+Scheduler: scheduling new batch #56 to sys[0]
+Scheduler: batch #56 has request #: 0 1 
+Trace: batch #56: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 96
+Control: sys[0] iteration 57 finished, 405692858 cycles
+Scheduler: batch #56 is done
+Scheduler: scheduling new batch #57 to sys[0]
+Scheduler: batch #57 has request #: 0 1 
+Trace: batch #57: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 98
+Control: sys[0] iteration 58 finished, 411827265 cycles
+Scheduler: batch #57 is done
+Memory: used: 13761806336 load: 4194304 after: 13766000640
+Scheduler: scheduling new batch #58 to sys[0]
+Scheduler: batch #58 has request #: 0 1 
+Trace: batch #58: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 100
+Control: sys[0] iteration 59 finished, 417917256 cycles
+Scheduler: batch #58 is done
+Scheduler: scheduling new batch #59 to sys[0]
+Scheduler: batch #59 has request #: 0 1 
+Trace: batch #59: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 102
+Control: sys[0] iteration 60 finished, 424001295 cycles
+Scheduler: batch #59 is done
+Scheduler: scheduling new batch #60 to sys[0]
+Scheduler: batch #60 has request #: 0 1 
+Trace: batch #60: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 104
+Control: sys[0] iteration 61 finished, 430118006 cycles
+Scheduler: batch #60 is done
+Scheduler: scheduling new batch #61 to sys[0]
+Scheduler: batch #61 has request #: 0 1 
+Trace: batch #61: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 106
+Control: sys[0] iteration 62 finished, 436187293 cycles
+Scheduler: batch #61 is done
+Memory: used: 13766000640 load: 4194304 after: 13770194944
+Scheduler: scheduling new batch #62 to sys[0]
+Scheduler: batch #62 has request #: 0 1 
+Trace: batch #62: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 108
+Control: sys[0] iteration 63 finished, 442301124 cycles
+Scheduler: batch #62 is done
+Scheduler: scheduling new batch #63 to sys[0]
+Scheduler: batch #63 has request #: 0 1 
+Trace: batch #63: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 110
+Control: sys[0] iteration 64 finished, 448404171 cycles
+Scheduler: batch #63 is done
+Scheduler: scheduling new batch #64 to sys[0]
+Scheduler: batch #64 has request #: 0 1 
+Trace: batch #64: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 112
+Control: sys[0] iteration 65 finished, 454522226 cycles
+Scheduler: batch #64 is done
+Scheduler: scheduling new batch #65 to sys[0]
+Scheduler: batch #65 has request #: 0 1 
+Trace: batch #65: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 114
+Control: sys[0] iteration 66 finished, 460622041 cycles
+Scheduler: batch #65 is done
+Memory: used: 13770194944 load: 4194304 after: 13774389248
+Scheduler: scheduling new batch #66 to sys[0]
+Scheduler: batch #66 has request #: 0 1 
+Trace: batch #66: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 116
+Control: sys[0] iteration 67 finished, 466779136 cycles
+Scheduler: batch #66 is done
+Scheduler: scheduling new batch #67 to sys[0]
+Scheduler: batch #67 has request #: 0 1 
+Trace: batch #67: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 118
+Control: sys[0] iteration 68 finished, 472858471 cycles
+Scheduler: batch #67 is done
+Scheduler: scheduling new batch #68 to sys[0]
+Scheduler: batch #68 has request #: 0 1 
+Trace: batch #68: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 120
+Control: sys[0] iteration 69 finished, 478933326 cycles
+Scheduler: batch #68 is done
+Scheduler: scheduling new batch #69 to sys[0]
+Scheduler: batch #69 has request #: 0 1 
+Trace: batch #69: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 122
+Control: sys[0] iteration 70 finished, 485012309 cycles
+Scheduler: batch #69 is done
+Scheduler: request #0 is done
+Memory: used: 13774389248 remove: 41943040 after: 13732446208
+Memory: used: 13732446208 load: 12582912 after: 13745029120
+Scheduler: scheduling new batch #70 to sys[0]
+Scheduler: batch #70 has request #: 1 2 
+Trace: batch #70: model: gpt3-6.7b, num requests: 2, total length: 17, prompt/kv_cache length: 60
+Control: sys[0] iteration 71 finished, 492332032 cycles
+Scheduler: batch #70 is done
+Scheduler: scheduling new batch #71 to sys[0]
+Scheduler: batch #71 has request #: 1 2 
+Trace: batch #71: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 62
+Control: sys[0] iteration 72 finished, 498479847 cycles
+Scheduler: batch #71 is done
+Scheduler: scheduling new batch #72 to sys[0]
+Scheduler: batch #72 has request #: 1 2 
+Trace: batch #72: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 64
+Control: sys[0] iteration 73 finished, 504598862 cycles
+Scheduler: batch #72 is done
+Scheduler: scheduling new batch #73 to sys[0]
+Scheduler: batch #73 has request #: 1 2 
+Trace: batch #73: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 66
+[0.5s] Avg Throughput: propmt: 96.0, generation: 196.0
+Control: sys[0] iteration 74 finished, 510725589 cycles
+Scheduler: batch #73 is done
+Memory: used: 13745029120 load: 4194304 after: 13749223424
+Scheduler: scheduling new batch #74 to sys[0]
+Scheduler: batch #74 has request #: 1 2 
+Trace: batch #74: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 68
+Control: sys[0] iteration 75 finished, 516833180 cycles
+Scheduler: batch #74 is done
+Scheduler: scheduling new batch #75 to sys[0]
+Scheduler: batch #75 has request #: 1 2 
+Trace: batch #75: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 70
+Control: sys[0] iteration 76 finished, 522946915 cycles
+Scheduler: batch #75 is done
+Scheduler: scheduling new batch #76 to sys[0]
+Scheduler: batch #76 has request #: 1 2 
+Trace: batch #76: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 72
+Control: sys[0] iteration 77 finished, 529098090 cycles
+Scheduler: batch #76 is done
+Scheduler: scheduling new batch #77 to sys[0]
+Scheduler: batch #77 has request #: 1 2 
+Trace: batch #77: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 74
+Control: sys[0] iteration 78 finished, 535225521 cycles
+Scheduler: batch #77 is done
+Memory: used: 13749223424 load: 4194304 after: 13753417728
+Scheduler: scheduling new batch #78 to sys[0]
+Scheduler: batch #78 has request #: 1 2 
+Trace: batch #78: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 76
+Control: sys[0] iteration 79 finished, 541304248 cycles
+Scheduler: batch #78 is done
+Scheduler: scheduling new batch #79 to sys[0]
+Scheduler: batch #79 has request #: 1 2 
+Trace: batch #79: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 78
+Control: sys[0] iteration 80 finished, 547459903 cycles
+Scheduler: batch #79 is done
+Scheduler: scheduling new batch #80 to sys[0]
+Scheduler: batch #80 has request #: 1 2 
+Trace: batch #80: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 80
+Control: sys[0] iteration 81 finished, 553549734 cycles
+Scheduler: batch #80 is done
+Scheduler: scheduling new batch #81 to sys[0]
+Scheduler: batch #81 has request #: 1 2 
+Trace: batch #81: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 82
+Control: sys[0] iteration 82 finished, 559619405 cycles
+Scheduler: batch #81 is done
+Memory: used: 13753417728 load: 4194304 after: 13757612032
+Scheduler: scheduling new batch #82 to sys[0]
+Scheduler: batch #82 has request #: 1 2 
+Trace: batch #82: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 84
+Control: sys[0] iteration 83 finished, 565744852 cycles
+Scheduler: batch #82 is done
+Scheduler: scheduling new batch #83 to sys[0]
+Scheduler: batch #83 has request #: 1 2 
+Trace: batch #83: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 86
+Control: sys[0] iteration 84 finished, 571864443 cycles
+Scheduler: batch #83 is done
+Memory: used: 13757612032 load: 4194304 after: 13761806336
+Scheduler: scheduling new batch #84 to sys[0]
+Scheduler: batch #84 has request #: 1 2 3 
+Trace: batch #84: model: gpt3-6.7b, num requests: 3, total length: 6, prompt/kv_cache length: 92
+Control: sys[0] iteration 85 finished, 577505279 cycles
+Scheduler: batch #84 is done
+Scheduler: scheduling new batch #85 to sys[0]
+Scheduler: batch #85 has request #: 1 2 3 
+Trace: batch #85: model: gpt3-6.7b, num requests: 3, total length: 3, prompt/kv_cache length: 95
+Control: sys[0] iteration 86 finished, 584511118 cycles
+Scheduler: batch #85 is done
+Memory: used: 13761806336 load: 4194304 after: 13766000640
+Scheduler: scheduling new batch #86 to sys[0]
+Scheduler: batch #86 has request #: 1 2 3 
+Trace: batch #86: model: gpt3-6.7b, num requests: 3, total length: 3, prompt/kv_cache length: 98
+Control: sys[0] iteration 87 finished, 591390141 cycles
+Scheduler: batch #86 is done
+Memory: used: 13766000640 load: 8388608 after: 13774389248
+Scheduler: scheduling new batch #87 to sys[0]
+Scheduler: batch #87 has request #: 1 2 3 4 
+Trace: batch #87: model: gpt3-6.7b, num requests: 4, total length: 16, prompt/kv_cache length: 114
+Control: sys[0] iteration 88 finished, 598738163 cycles
+Scheduler: batch #87 is done
+Memory: used: 13774389248 load: 2097152 after: 13776486400
+Scheduler: scheduling new batch #88 to sys[0]
+Scheduler: batch #88 has request #: 1 2 3 4 
+Trace: batch #88: model: gpt3-6.7b, num requests: 4, total length: 4, prompt/kv_cache length: 118
+Control: sys[0] iteration 89 finished, 605057384 cycles
+Scheduler: batch #88 is done
+Memory: used: 13776486400 load: 8388608 after: 13784875008
+Scheduler: scheduling new batch #89 to sys[0]
+Scheduler: batch #89 has request #: 1 2 3 4 5 
+Trace: batch #89: model: gpt3-6.7b, num requests: 5, total length: 19, prompt/kv_cache length: 137
+Control: sys[0] iteration 90 finished, 613478947 cycles
+Scheduler: batch #89 is done
+Memory: used: 13784875008 load: 16777216 after: 13801652224
+Scheduler: scheduling new batch #90 to sys[0]
+Scheduler: batch #90 has request #: 1 2 3 4 5 6 
+Trace: batch #90: model: gpt3-6.7b, num requests: 6, total length: 20, prompt/kv_cache length: 157
+Control: sys[0] iteration 91 finished, 622419077 cycles
+Scheduler: batch #90 is done
+Memory: used: 13801652224 load: 2097152 after: 13803749376
+Scheduler: scheduling new batch #91 to sys[0]
+Scheduler: batch #91 has request #: 1 2 3 4 5 6 
+Trace: batch #91: model: gpt3-6.7b, num requests: 6, total length: 6, prompt/kv_cache length: 163
+Control: sys[0] iteration 92 finished, 628869193 cycles
+Scheduler: batch #91 is done
+Memory: used: 13803749376 load: 2097152 after: 13805846528
+Scheduler: scheduling new batch #92 to sys[0]
+Scheduler: batch #92 has request #: 1 2 3 4 5 6 
+Trace: batch #92: model: gpt3-6.7b, num requests: 6, total length: 6, prompt/kv_cache length: 169
+Control: sys[0] iteration 93 finished, 635183373 cycles
+Scheduler: batch #92 is done
+Scheduler: scheduling new batch #93 to sys[0]
+Scheduler: batch #93 has request #: 1 2 3 4 5 6 
+Trace: batch #93: model: gpt3-6.7b, num requests: 6, total length: 6, prompt/kv_cache length: 175
+Control: sys[0] iteration 94 finished, 641570065 cycles
+Scheduler: batch #93 is done
+Memory: used: 13805846528 load: 8388608 after: 13814235136
+Scheduler: scheduling new batch #94 to sys[0]
+Scheduler: batch #94 has request #: 1 2 3 4 5 6 
+Trace: batch #94: model: gpt3-6.7b, num requests: 6, total length: 6, prompt/kv_cache length: 181
+Control: sys[0] iteration 95 finished, 648075413 cycles
+Scheduler: batch #94 is done
+Memory: used: 13814235136 load: 2097152 after: 13816332288
+Scheduler: scheduling new batch #95 to sys[0]
+Scheduler: batch #95 has request #: 1 2 3 4 5 6 
+Trace: batch #95: model: gpt3-6.7b, num requests: 6, total length: 6, prompt/kv_cache length: 187
+Control: sys[0] iteration 96 finished, 654476249 cycles
+Scheduler: batch #95 is done
+Scheduler: request #3 is done
+Memory: used: 13816332288 remove: 8388608 after: 13807943680
+Scheduler: scheduling new batch #96 to sys[0]
+Scheduler: batch #96 has request #: 1 2 4 5 6 
+Trace: batch #96: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 177
+Control: sys[0] iteration 97 finished, 661448645 cycles
+Scheduler: batch #96 is done
+Scheduler: scheduling new batch #97 to sys[0]
+Scheduler: batch #97 has request #: 1 2 4 5 6 
+Trace: batch #97: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 182
+Control: sys[0] iteration 98 finished, 668442065 cycles
+Scheduler: batch #97 is done
+Memory: used: 13807943680 load: 8388608 after: 13816332288
+Scheduler: scheduling new batch #98 to sys[0]
+Scheduler: batch #98 has request #: 1 2 4 5 6 
+Trace: batch #98: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 187
+Control: sys[0] iteration 99 finished, 675364029 cycles
+Scheduler: batch #98 is done
+Memory: used: 13816332288 load: 2097152 after: 13818429440
+Scheduler: scheduling new batch #99 to sys[0]
+Scheduler: batch #99 has request #: 1 2 4 5 6 
+Trace: batch #99: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 192
+Control: sys[0] iteration 100 finished, 682474281 cycles
+Scheduler: batch #99 is done
+Scheduler: scheduling new batch #100 to sys[0]
+Scheduler: batch #100 has request #: 1 2 4 5 6 
+Trace: batch #100: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 197
+Control: sys[0] iteration 101 finished, 689480821 cycles
+Scheduler: batch #100 is done
+Scheduler: scheduling new batch #101 to sys[0]
+Scheduler: batch #101 has request #: 1 2 4 5 6 
+Trace: batch #101: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 202
+Control: sys[0] iteration 102 finished, 696390625 cycles
+Scheduler: batch #101 is done
+Memory: used: 13818429440 load: 8388608 after: 13826818048
+Scheduler: scheduling new batch #102 to sys[0]
+Scheduler: batch #102 has request #: 1 2 4 5 6 
+Trace: batch #102: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 207
+Control: sys[0] iteration 103 finished, 703334189 cycles
+Scheduler: batch #102 is done
+Memory: used: 13826818048 load: 2097152 after: 13828915200
+Scheduler: scheduling new batch #103 to sys[0]
+Scheduler: batch #103 has request #: 1 2 4 5 6 
+Trace: batch #103: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 212
+Control: sys[0] iteration 104 finished, 710365881 cycles
+Scheduler: batch #103 is done
+Scheduler: scheduling new batch #104 to sys[0]
+Scheduler: batch #104 has request #: 1 2 4 5 6 
+Trace: batch #104: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 217
+Control: sys[0] iteration 105 finished, 717565893 cycles
+Scheduler: batch #104 is done
+Scheduler: scheduling new batch #105 to sys[0]
+Scheduler: batch #105 has request #: 1 2 4 5 6 
+Trace: batch #105: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 222
+Control: sys[0] iteration 106 finished, 724738449 cycles
+Scheduler: batch #105 is done
+Memory: used: 13828915200 load: 8388608 after: 13837303808
+Scheduler: scheduling new batch #106 to sys[0]
+Scheduler: batch #106 has request #: 1 2 4 5 6 
+Trace: batch #106: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 227
+Control: sys[0] iteration 107 finished, 731720509 cycles
+Scheduler: batch #106 is done
+Memory: used: 13837303808 load: 2097152 after: 13839400960
+Scheduler: scheduling new batch #107 to sys[0]
+Scheduler: batch #107 has request #: 1 2 4 5 6 
+Trace: batch #107: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 232
+Control: sys[0] iteration 108 finished, 738679881 cycles
+Scheduler: batch #107 is done
+Scheduler: scheduling new batch #108 to sys[0]
+Scheduler: batch #108 has request #: 1 2 4 5 6 
+Trace: batch #108: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 237
+Control: sys[0] iteration 109 finished, 745727605 cycles
+Scheduler: batch #108 is done
+Scheduler: scheduling new batch #109 to sys[0]
+Scheduler: batch #109 has request #: 1 2 4 5 6 
+Trace: batch #109: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 242
+Control: sys[0] iteration 110 finished, 752680193 cycles
+Scheduler: batch #109 is done
+Memory: used: 13839400960 load: 8388608 after: 13847789568
+Scheduler: scheduling new batch #110 to sys[0]
+Scheduler: batch #110 has request #: 1 2 4 5 6 
+Trace: batch #110: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 247
+Control: sys[0] iteration 111 finished, 759737549 cycles
+Scheduler: batch #110 is done
+Memory: used: 13847789568 load: 2097152 after: 13849886720
+Scheduler: scheduling new batch #111 to sys[0]
+Scheduler: batch #111 has request #: 1 2 4 5 6 
+Trace: batch #111: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 252
+Control: sys[0] iteration 112 finished, 766730649 cycles
+Scheduler: batch #111 is done
+Scheduler: scheduling new batch #112 to sys[0]
+Scheduler: batch #112 has request #: 1 2 4 5 6 
+Trace: batch #112: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 257
+Control: sys[0] iteration 113 finished, 773743109 cycles
+Scheduler: batch #112 is done
+Scheduler: scheduling new batch #113 to sys[0]
+Scheduler: batch #113 has request #: 1 2 4 5 6 
+Trace: batch #113: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 262
+Control: sys[0] iteration 114 finished, 780805649 cycles
+Scheduler: batch #113 is done
+Memory: used: 13849886720 load: 8388608 after: 13858275328
+Scheduler: scheduling new batch #114 to sys[0]
+Scheduler: batch #114 has request #: 1 2 4 5 6 
+Trace: batch #114: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 267
+Control: sys[0] iteration 115 finished, 787964189 cycles
+Scheduler: batch #114 is done
+Memory: used: 13858275328 load: 2097152 after: 13860372480
+Scheduler: scheduling new batch #115 to sys[0]
+Scheduler: batch #115 has request #: 1 2 4 5 6 
+Trace: batch #115: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 272
+Control: sys[0] iteration 116 finished, 795021705 cycles
+Scheduler: batch #115 is done
+Scheduler: scheduling new batch #116 to sys[0]
+Scheduler: batch #116 has request #: 1 2 4 5 6 
+Trace: batch #116: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 277
+Control: sys[0] iteration 117 finished, 801968405 cycles
+Scheduler: batch #116 is done
+Scheduler: scheduling new batch #117 to sys[0]
+Scheduler: batch #117 has request #: 1 2 4 5 6 
+Trace: batch #117: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 282
+Control: sys[0] iteration 118 finished, 809090433 cycles
+Scheduler: batch #117 is done
+Memory: used: 13860372480 load: 8388608 after: 13868761088
+Scheduler: scheduling new batch #118 to sys[0]
+Scheduler: batch #118 has request #: 1 2 4 5 6 
+Trace: batch #118: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 287
+Control: sys[0] iteration 119 finished, 816031213 cycles
+Scheduler: batch #118 is done
+Memory: used: 13868761088 load: 4194304 after: 13872955392
+Scheduler: scheduling new batch #119 to sys[0]
+Scheduler: batch #119 has request #: 1 2 4 5 6 7 
+Trace: batch #119: model: gpt3-6.7b, num requests: 6, total length: 7, prompt/kv_cache length: 294
+Control: sys[0] iteration 120 finished, 824437739 cycles
+Scheduler: batch #119 is done
+Scheduler: scheduling new batch #120 to sys[0]
+Scheduler: batch #120 has request #: 1 2 4 5 6 7 
+Trace: batch #120: model: gpt3-6.7b, num requests: 6, total length: 6, prompt/kv_cache length: 300
+Control: sys[0] iteration 121 finished, 830909487 cycles
+Scheduler: batch #120 is done
+Memory: used: 13872955392 load: 2097152 after: 13875052544
+Scheduler: scheduling new batch #121 to sys[0]
+Scheduler: batch #121 has request #: 1 2 4 5 6 7 
+Trace: batch #121: model: gpt3-6.7b, num requests: 6, total length: 6, prompt/kv_cache length: 306
+Control: sys[0] iteration 122 finished, 837221555 cycles
+Scheduler: batch #121 is done
+Memory: used: 13875052544 load: 8388608 after: 13883441152
+Scheduler: scheduling new batch #122 to sys[0]
+Scheduler: batch #122 has request #: 1 2 4 5 6 7 
+Trace: batch #122: model: gpt3-6.7b, num requests: 6, total length: 6, prompt/kv_cache length: 312
+Control: sys[0] iteration 123 finished, 843562231 cycles
+Scheduler: batch #122 is done
+Memory: used: 13883441152 load: 2097152 after: 13885538304
+Scheduler: scheduling new batch #123 to sys[0]
+Scheduler: batch #123 has request #: 1 2 4 5 6 7 
+Trace: batch #123: model: gpt3-6.7b, num requests: 6, total length: 6, prompt/kv_cache length: 318
+Control: sys[0] iteration 124 finished, 849871931 cycles
+Scheduler: batch #123 is done
+Scheduler: scheduling new batch #124 to sys[0]
+Scheduler: batch #124 has request #: 1 2 4 5 6 7 
+Trace: batch #124: model: gpt3-6.7b, num requests: 6, total length: 6, prompt/kv_cache length: 324
+Control: sys[0] iteration 125 finished, 856389375 cycles
+Scheduler: batch #124 is done
+Memory: used: 13885538304 load: 2097152 after: 13887635456
+Scheduler: scheduling new batch #125 to sys[0]
+Scheduler: batch #125 has request #: 1 2 4 5 6 7 
+Trace: batch #125: model: gpt3-6.7b, num requests: 6, total length: 6, prompt/kv_cache length: 330
+Control: sys[0] iteration 126 finished, 862757315 cycles
+Scheduler: batch #125 is done
+Memory: used: 13887635456 load: 8388608 after: 13896024064
+Scheduler: scheduling new batch #126 to sys[0]
+Scheduler: batch #126 has request #: 1 2 4 5 6 7 
+Trace: batch #126: model: gpt3-6.7b, num requests: 6, total length: 6, prompt/kv_cache length: 336
+Control: sys[0] iteration 127 finished, 869002247 cycles
+Scheduler: batch #126 is done
+Memory: used: 13896024064 load: 2097152 after: 13898121216
+Scheduler: scheduling new batch #127 to sys[0]
+Scheduler: batch #127 has request #: 1 2 4 5 6 7 
+Trace: batch #127: model: gpt3-6.7b, num requests: 6, total length: 6, prompt/kv_cache length: 342
+Control: sys[0] iteration 128 finished, 875317163 cycles
+Scheduler: batch #127 is done
+Scheduler: request #7 is done
+Memory: used: 13898121216 remove: 6291456 after: 13891829760
+Scheduler: scheduling new batch #128 to sys[0]
+Scheduler: batch #128 has request #: 1 2 4 5 6 
+Trace: batch #128: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 337
+Control: sys[0] iteration 129 finished, 882286391 cycles
+Scheduler: batch #128 is done
+Scheduler: scheduling new batch #129 to sys[0]
+Scheduler: batch #129 has request #: 1 2 4 5 6 
+Trace: batch #129: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 342
+Control: sys[0] iteration 130 finished, 889226435 cycles
+Scheduler: batch #129 is done
+Memory: used: 13891829760 load: 8388608 after: 13900218368
+Scheduler: scheduling new batch #130 to sys[0]
+Scheduler: batch #130 has request #: 1 2 4 5 6 
+Trace: batch #130: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 347
+Control: sys[0] iteration 131 finished, 896178991 cycles
+Scheduler: batch #130 is done
+Memory: used: 13900218368 load: 2097152 after: 13902315520
+Scheduler: scheduling new batch #131 to sys[0]
+Scheduler: batch #131 has request #: 1 2 4 5 6 
+Trace: batch #131: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 352
+Control: sys[0] iteration 132 finished, 903095099 cycles
+Scheduler: batch #131 is done
+Scheduler: scheduling new batch #132 to sys[0]
+Scheduler: batch #132 has request #: 1 2 4 5 6 
+Trace: batch #132: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 357
+Control: sys[0] iteration 133 finished, 909967207 cycles
+Scheduler: batch #132 is done
+Memory: used: 13902315520 load: 10485760 after: 13912801280
+Scheduler: scheduling new batch #133 to sys[0]
+Scheduler: batch #133 has request #: 1 2 4 5 6 8 
+Trace: batch #133: model: gpt3-6.7b, num requests: 6, total length: 23, prompt/kv_cache length: 380
+Control: sys[0] iteration 134 finished, 917864112 cycles
+Scheduler: batch #133 is done
+Memory: used: 13912801280 load: 8388608 after: 13921189888
+Scheduler: scheduling new batch #134 to sys[0]
+Scheduler: batch #134 has request #: 1 2 4 5 6 8 
+Trace: batch #134: model: gpt3-6.7b, num requests: 6, total length: 6, prompt/kv_cache length: 386
+Control: sys[0] iteration 135 finished, 924223252 cycles
+Scheduler: batch #134 is done
+Memory: used: 13921189888 load: 4194304 after: 13925384192
+Scheduler: scheduling new batch #135 to sys[0]
+Scheduler: batch #135 has request #: 1 2 4 5 6 8 
+Trace: batch #135: model: gpt3-6.7b, num requests: 6, total length: 6, prompt/kv_cache length: 392
+Control: sys[0] iteration 136 finished, 930479032 cycles
+Scheduler: batch #135 is done
+Scheduler: scheduling new batch #136 to sys[0]
+Scheduler: batch #136 has request #: 1 2 4 5 6 8 
+Trace: batch #136: model: gpt3-6.7b, num requests: 6, total length: 6, prompt/kv_cache length: 398
+Control: sys[0] iteration 137 finished, 936719612 cycles
+Scheduler: batch #136 is done
+Scheduler: scheduling new batch #137 to sys[0]
+Scheduler: batch #137 has request #: 1 2 4 5 6 8 
+Trace: batch #137: model: gpt3-6.7b, num requests: 6, total length: 6, prompt/kv_cache length: 404
+Control: sys[0] iteration 138 finished, 943252224 cycles
+Scheduler: batch #137 is done
+Memory: used: 13925384192 load: 8388608 after: 13933772800
+Scheduler: scheduling new batch #138 to sys[0]
+Scheduler: batch #138 has request #: 1 2 4 5 6 8 
+Trace: batch #138: model: gpt3-6.7b, num requests: 6, total length: 6, prompt/kv_cache length: 410
+Control: sys[0] iteration 139 finished, 949621540 cycles
+Scheduler: batch #138 is done
+Scheduler: request #2 is done
+Memory: used: 13933772800 remove: 46137344 after: 13887635456
+Memory: used: 13887635456 load: 4194304 after: 13891829760
+Scheduler: scheduling new batch #139 to sys[0]
+Scheduler: batch #139 has request #: 1 4 5 6 8 
+Trace: batch #139: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 331
+Control: sys[0] iteration 140 finished, 956617808 cycles
+Scheduler: batch #139 is done
+Scheduler: scheduling new batch #140 to sys[0]
+Scheduler: batch #140 has request #: 1 4 5 6 8 
+Trace: batch #140: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 336
+Control: sys[0] iteration 141 finished, 963597404 cycles
+Scheduler: batch #140 is done
+Scheduler: scheduling new batch #141 to sys[0]
+Scheduler: batch #141 has request #: 1 4 5 6 8 
+Trace: batch #141: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 341
+Control: sys[0] iteration 142 finished, 970496392 cycles
+Scheduler: batch #141 is done
+Memory: used: 13891829760 load: 6291456 after: 13898121216
+Scheduler: scheduling new batch #142 to sys[0]
+Scheduler: batch #142 has request #: 1 4 5 6 8 
+Trace: batch #142: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 346
+Control: sys[0] iteration 143 finished, 977446004 cycles
+Scheduler: batch #142 is done
+Memory: used: 13898121216 load: 4194304 after: 13902315520
+Scheduler: scheduling new batch #143 to sys[0]
+Scheduler: batch #143 has request #: 1 4 5 6 8 
+Trace: batch #143: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 351
+Control: sys[0] iteration 144 finished, 984377536 cycles
+Scheduler: batch #143 is done
+Scheduler: scheduling new batch #144 to sys[0]
+Scheduler: batch #144 has request #: 1 4 5 6 8 
+Trace: batch #144: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 356
+Control: sys[0] iteration 145 finished, 991303628 cycles
+Scheduler: batch #144 is done
+Scheduler: scheduling new batch #145 to sys[0]
+Scheduler: batch #145 has request #: 1 4 5 6 8 
+Trace: batch #145: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 361
+Control: sys[0] iteration 146 finished, 998269816 cycles
+Scheduler: batch #145 is done
+Memory: used: 13902315520 load: 6291456 after: 13908606976
+Scheduler: scheduling new batch #146 to sys[0]
+Scheduler: batch #146 has request #: 1 4 5 6 8 
+Trace: batch #146: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 366
+Control: sys[0] iteration 147 finished, 1005227140 cycles
+Scheduler: batch #146 is done
+Memory: used: 13908606976 load: 4194304 after: 13912801280
+Scheduler: scheduling new batch #147 to sys[0]
+Scheduler: batch #147 has request #: 1 4 5 6 8 
+Trace: batch #147: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 371
+[1.0s] Avg Throughput: propmt: 134.0, generation: 700.0
+Control: sys[0] iteration 148 finished, 1012138544 cycles
+Scheduler: batch #147 is done
+Scheduler: scheduling new batch #148 to sys[0]
+Scheduler: batch #148 has request #: 1 4 5 6 8 
+Trace: batch #148: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 376
+Control: sys[0] iteration 149 finished, 1019071228 cycles
+Scheduler: batch #148 is done
+Scheduler: scheduling new batch #149 to sys[0]
+Scheduler: batch #149 has request #: 1 4 5 6 8 
+Trace: batch #149: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 381
+Control: sys[0] iteration 150 finished, 1026006920 cycles
+Scheduler: batch #149 is done
+Memory: used: 13912801280 load: 6291456 after: 13919092736
+Scheduler: scheduling new batch #150 to sys[0]
+Scheduler: batch #150 has request #: 1 4 5 6 8 
+Trace: batch #150: model: gpt3-6.7b, num requests: 5, total length: 5, prompt/kv_cache length: 386
+Control: sys[0] iteration 151 finished, 1032910484 cycles
+Scheduler: batch #150 is done
+Memory: used: 13919092736 load: 8388608 after: 13927481344
+Scheduler: scheduling new batch #151 to sys[0]
+Scheduler: batch #151 has request #: 1 4 5 6 8 9 
+Trace: batch #151: model: gpt3-6.7b, num requests: 6, total length: 10, prompt/kv_cache length: 396
+Control: sys[0] iteration 152 finished, 1040819657 cycles
+Scheduler: batch #151 is done
+Scheduler: request #1 is done
+Memory: used: 13927481344 remove: 67108864 after: 13860372480
+Scheduler: request #5 is done
+Memory: used: 13860372480 remove: 41943040 after: 13818429440
+Scheduler: scheduling new batch #152 to sys[0]
+Scheduler: batch #152 has request #: 4 6 8 9 
+Trace: batch #152: model: gpt3-6.7b, num requests: 4, total length: 4, prompt/kv_cache length: 198
+Control: sys[0] iteration 153 finished, 1047118942 cycles
+Scheduler: batch #152 is done
+Scheduler: scheduling new batch #153 to sys[0]
+Scheduler: batch #153 has request #: 4 6 8 9 
+Trace: batch #153: model: gpt3-6.7b, num requests: 4, total length: 4, prompt/kv_cache length: 202
+Control: sys[0] iteration 154 finished, 1053483251 cycles
+Scheduler: batch #153 is done
+Memory: used: 13818429440 load: 4194304 after: 13822623744
+Scheduler: scheduling new batch #154 to sys[0]
+Scheduler: batch #154 has request #: 4 6 8 9 
+Trace: batch #154: model: gpt3-6.7b, num requests: 4, total length: 4, prompt/kv_cache length: 206
+Control: sys[0] iteration 155 finished, 1059759944 cycles
+Scheduler: batch #154 is done
+Memory: used: 13822623744 load: 4194304 after: 13826818048
+Scheduler: scheduling new batch #155 to sys[0]
+Scheduler: batch #155 has request #: 4 6 8 9 
+Trace: batch #155: model: gpt3-6.7b, num requests: 4, total length: 4, prompt/kv_cache length: 210
+Control: sys[0] iteration 156 finished, 1066059901 cycles
+Scheduler: batch #155 is done
+Scheduler: scheduling new batch #156 to sys[0]
+Scheduler: batch #156 has request #: 4 6 8 9 
+Trace: batch #156: model: gpt3-6.7b, num requests: 4, total length: 4, prompt/kv_cache length: 214
+Control: sys[0] iteration 157 finished, 1072309330 cycles
+Scheduler: batch #156 is done
+Scheduler: scheduling new batch #157 to sys[0]
+Scheduler: batch #157 has request #: 4 6 8 9 
+Trace: batch #157: model: gpt3-6.7b, num requests: 4, total length: 4, prompt/kv_cache length: 218
+Control: sys[0] iteration 158 finished, 1078584743 cycles
+Scheduler: batch #157 is done
+Memory: used: 13826818048 load: 4194304 after: 13831012352
+Scheduler: scheduling new batch #158 to sys[0]
+Scheduler: batch #158 has request #: 4 6 8 9 
+Trace: batch #158: model: gpt3-6.7b, num requests: 4, total length: 4, prompt/kv_cache length: 222
+Control: sys[0] iteration 159 finished, 1084781980 cycles
+Scheduler: batch #158 is done
+Memory: used: 13831012352 load: 4194304 after: 13835206656
+Scheduler: scheduling new batch #159 to sys[0]
+Scheduler: batch #159 has request #: 4 6 8 9 
+Trace: batch #159: model: gpt3-6.7b, num requests: 4, total length: 4, prompt/kv_cache length: 226
+Control: sys[0] iteration 160 finished, 1090980401 cycles
+Scheduler: batch #159 is done
+Scheduler: scheduling new batch #160 to sys[0]
+Scheduler: batch #160 has request #: 4 6 8 9 
+Trace: batch #160: model: gpt3-6.7b, num requests: 4, total length: 4, prompt/kv_cache length: 230
+Control: sys[0] iteration 161 finished, 1097233446 cycles
+Scheduler: batch #160 is done
+Scheduler: scheduling new batch #161 to sys[0]
+Scheduler: batch #161 has request #: 4 6 8 9 
+Trace: batch #161: model: gpt3-6.7b, num requests: 4, total length: 4, prompt/kv_cache length: 234
+Control: sys[0] iteration 162 finished, 1103517275 cycles
+Scheduler: batch #161 is done
+Memory: used: 13835206656 load: 4194304 after: 13839400960
+Scheduler: scheduling new batch #162 to sys[0]
+Scheduler: batch #162 has request #: 4 6 8 9 
+Trace: batch #162: model: gpt3-6.7b, num requests: 4, total length: 4, prompt/kv_cache length: 238
+Control: sys[0] iteration 163 finished, 1109800752 cycles
+Scheduler: batch #162 is done
+Memory: used: 13839400960 load: 4194304 after: 13843595264
+Scheduler: scheduling new batch #163 to sys[0]
+Scheduler: batch #163 has request #: 4 6 8 9 
+Trace: batch #163: model: gpt3-6.7b, num requests: 4, total length: 4, prompt/kv_cache length: 242
+Control: sys[0] iteration 164 finished, 1116048773 cycles
+Scheduler: batch #163 is done
+Scheduler: scheduling new batch #164 to sys[0]
+Scheduler: batch #164 has request #: 4 6 8 9 
+Trace: batch #164: model: gpt3-6.7b, num requests: 4, total length: 4, prompt/kv_cache length: 246
+Control: sys[0] iteration 165 finished, 1122276858 cycles
+Scheduler: batch #164 is done
+Scheduler: scheduling new batch #165 to sys[0]
+Scheduler: batch #165 has request #: 4 6 8 9 
+Trace: batch #165: model: gpt3-6.7b, num requests: 4, total length: 4, prompt/kv_cache length: 250
+Control: sys[0] iteration 166 finished, 1128596655 cycles
+Scheduler: batch #165 is done
+Memory: used: 13843595264 load: 4194304 after: 13847789568
+Scheduler: scheduling new batch #166 to sys[0]
+Scheduler: batch #166 has request #: 4 6 8 9 
+Trace: batch #166: model: gpt3-6.7b, num requests: 4, total length: 4, prompt/kv_cache length: 254
+Control: sys[0] iteration 167 finished, 1134879364 cycles
+Scheduler: batch #166 is done
+Memory: used: 13847789568 load: 4194304 after: 13851983872
+Scheduler: scheduling new batch #167 to sys[0]
+Scheduler: batch #167 has request #: 4 6 8 9 
+Trace: batch #167: model: gpt3-6.7b, num requests: 4, total length: 4, prompt/kv_cache length: 258
+Control: sys[0] iteration 168 finished, 1141115161 cycles
+Scheduler: batch #167 is done
+Scheduler: scheduling new batch #168 to sys[0]
+Scheduler: batch #168 has request #: 4 6 8 9 
+Trace: batch #168: model: gpt3-6.7b, num requests: 4, total length: 4, prompt/kv_cache length: 262
+Control: sys[0] iteration 169 finished, 1147321742 cycles
+Scheduler: batch #168 is done
+Scheduler: scheduling new batch #169 to sys[0]
+Scheduler: batch #169 has request #: 4 6 8 9 
+Trace: batch #169: model: gpt3-6.7b, num requests: 4, total length: 4, prompt/kv_cache length: 266
+Control: sys[0] iteration 170 finished, 1153557699 cycles
+Scheduler: batch #169 is done
+Memory: used: 13851983872 load: 4194304 after: 13856178176
+Scheduler: scheduling new batch #170 to sys[0]
+Scheduler: batch #170 has request #: 4 6 8 9 
+Trace: batch #170: model: gpt3-6.7b, num requests: 4, total length: 4, prompt/kv_cache length: 270
+Control: sys[0] iteration 171 finished, 1159728888 cycles
+Scheduler: batch #170 is done
+Memory: used: 13856178176 load: 4194304 after: 13860372480
+Scheduler: scheduling new batch #171 to sys[0]
+Scheduler: batch #171 has request #: 4 6 8 9 
+Trace: batch #171: model: gpt3-6.7b, num requests: 4, total length: 4, prompt/kv_cache length: 274
+Control: sys[0] iteration 172 finished, 1165999117 cycles
+Scheduler: batch #171 is done
+Scheduler: scheduling new batch #172 to sys[0]
+Scheduler: batch #172 has request #: 4 6 8 9 
+Trace: batch #172: model: gpt3-6.7b, num requests: 4, total length: 4, prompt/kv_cache length: 278
+Control: sys[0] iteration 173 finished, 1172209986 cycles
+Scheduler: batch #172 is done
+Scheduler: scheduling new batch #173 to sys[0]
+Scheduler: batch #173 has request #: 4 6 8 9 
+Trace: batch #173: model: gpt3-6.7b, num requests: 4, total length: 4, prompt/kv_cache length: 282
+Control: sys[0] iteration 174 finished, 1178426199 cycles
+Scheduler: batch #173 is done
+Scheduler: request #6 is done
+Memory: used: 13860372480 remove: 52428800 after: 13807943680
+Memory: used: 13807943680 load: 4194304 after: 13812137984
+Scheduler: scheduling new batch #174 to sys[0]
+Scheduler: batch #174 has request #: 4 8 9 
+Trace: batch #174: model: gpt3-6.7b, num requests: 3, total length: 3, prompt/kv_cache length: 187
+Control: sys[0] iteration 175 finished, 1185236422 cycles
+Scheduler: batch #174 is done
+Memory: used: 13812137984 load: 2097152 after: 13814235136
+Scheduler: scheduling new batch #175 to sys[0]
+Scheduler: batch #175 has request #: 4 8 9 
+Trace: batch #175: model: gpt3-6.7b, num requests: 3, total length: 3, prompt/kv_cache length: 190
+Control: sys[0] iteration 176 finished, 1192051349 cycles
+Scheduler: batch #175 is done
+Scheduler: scheduling new batch #176 to sys[0]
+Scheduler: batch #176 has request #: 4 8 9 
+Trace: batch #176: model: gpt3-6.7b, num requests: 3, total length: 3, prompt/kv_cache length: 193
+Control: sys[0] iteration 177 finished, 1198915620 cycles
+Scheduler: batch #176 is done
+Scheduler: request #9 is done
+Memory: used: 13814235136 remove: 16777216 after: 13797457920
+Scheduler: scheduling new batch #177 to sys[0]
+Scheduler: batch #177 has request #: 4 8 
+Trace: batch #177: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 165
+Control: sys[0] iteration 178 finished, 1205025803 cycles
+Scheduler: batch #177 is done
+Memory: used: 13797457920 load: 2097152 after: 13799555072
+Scheduler: scheduling new batch #178 to sys[0]
+Scheduler: batch #178 has request #: 4 8 
+Trace: batch #178: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 167
+Control: sys[0] iteration 179 finished, 1211249202 cycles
+Scheduler: batch #178 is done
+Memory: used: 13799555072 load: 2097152 after: 13801652224
+Scheduler: scheduling new batch #179 to sys[0]
+Scheduler: batch #179 has request #: 4 8 
+Trace: batch #179: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 169
+Control: sys[0] iteration 180 finished, 1217298009 cycles
+Scheduler: batch #179 is done
+Scheduler: scheduling new batch #180 to sys[0]
+Scheduler: batch #180 has request #: 4 8 
+Trace: batch #180: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 171
+Control: sys[0] iteration 181 finished, 1223343616 cycles
+Scheduler: batch #180 is done
+Scheduler: scheduling new batch #181 to sys[0]
+Scheduler: batch #181 has request #: 4 8 
+Trace: batch #181: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 173
+Control: sys[0] iteration 182 finished, 1229379079 cycles
+Scheduler: batch #181 is done
+Memory: used: 13801652224 load: 2097152 after: 13803749376
+Scheduler: scheduling new batch #182 to sys[0]
+Scheduler: batch #182 has request #: 4 8 
+Trace: batch #182: model: gpt3-6.7b, num requests: 2, total length: 2, prompt/kv_cache length: 175
+Control: sys[0] iteration 183 finished, 1235471918 cycles
+Scheduler: batch #182 is done
+Scheduler: request #4 is done
+Memory: used: 13803749376 remove: 58720256 after: 13745029120
+Memory: used: 13745029120 load: 2097152 after: 13747126272
+Scheduler: scheduling new batch #183 to sys[0]
+Scheduler: batch #183 has request #: 8 
+Trace: batch #183: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 68
+Control: sys[0] iteration 184 finished, 1241774626 cycles
+Scheduler: batch #183 is done
+Scheduler: scheduling new batch #184 to sys[0]
+Scheduler: batch #184 has request #: 8 
+Trace: batch #184: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 69
+Control: sys[0] iteration 185 finished, 1248039094 cycles
+Scheduler: batch #184 is done
+Scheduler: scheduling new batch #185 to sys[0]
+Scheduler: batch #185 has request #: 8 
+Trace: batch #185: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 70
+Control: sys[0] iteration 186 finished, 1254307722 cycles
+Scheduler: batch #185 is done
+Scheduler: scheduling new batch #186 to sys[0]
+Scheduler: batch #186 has request #: 8 
+Trace: batch #186: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 71
+Control: sys[0] iteration 187 finished, 1260575038 cycles
+Scheduler: batch #186 is done
+Memory: used: 13747126272 load: 2097152 after: 13749223424
+Scheduler: scheduling new batch #187 to sys[0]
+Scheduler: batch #187 has request #: 8 
+Trace: batch #187: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 72
+Control: sys[0] iteration 188 finished, 1266828498 cycles
+Scheduler: batch #187 is done
+Scheduler: scheduling new batch #188 to sys[0]
+Scheduler: batch #188 has request #: 8 
+Trace: batch #188: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 73
+Control: sys[0] iteration 189 finished, 1273123398 cycles
+Scheduler: batch #188 is done
+Scheduler: scheduling new batch #189 to sys[0]
+Scheduler: batch #189 has request #: 8 
+Trace: batch #189: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 74
+Control: sys[0] iteration 190 finished, 1279392762 cycles
+Scheduler: batch #189 is done
+Scheduler: scheduling new batch #190 to sys[0]
+Scheduler: batch #190 has request #: 8 
+Trace: batch #190: model: gpt3-6.7b, num requests: 1, total length: 1, prompt/kv_cache length: 75
+Control: sys[0] iteration 191 finished, 1285656942 cycles
+Scheduler: batch #190 is done
+Scheduler: request #8 is done
+Memory: used: 13749223424 remove: 39845888 after: 13709377536
+[1.5s] Avg Throughput: propmt: 10.0, generation: 286.0
+---------------------------
+Exiting The Simulator
+Memory Is All Freed
+Checking Non-Exited Systems ...
+---------------------------
+All Request Has Been Exited
+---------------------------
+{'id': 0, 'model': 'gpt3-6.7b', 'input': np.int64(10), 'output': np.int64(80), 'arrival': np.int64(46926808), 'end_time': 485012309, 'latency': np.int64(438085501), 'queuing_delay': np.int64(0), 'TTFT': np.int64(6571797), 'TPOT': np.int64(6258364)}
+{'id': 1, 'model': 'gpt3-6.7b', 'input': np.int64(22), 'output': np.int64(126), 'arrival': np.int64(347938952), 'end_time': 1040819657, 'latency': np.int64(692880705), 'queuing_delay': np.int64(1881905), 'TTFT': np.int64(8760026), 'TPOT': np.int64(6662314)}
+{'id': 2, 'model': 'gpt3-6.7b', 'input': np.int64(16), 'output': np.int64(85), 'arrival': np.int64(479613521), 'end_time': 949621540, 'latency': np.int64(470008019), 'queuing_delay': np.int64(5398788), 'TTFT': np.int64(12718511), 'TPOT': np.int64(6811710)}
+{'id': 3, 'model': 'gpt3-6.7b', 'input': np.int64(4), 'output': np.int64(16), 'arrival': np.int64(570907776), 'end_time': 654476249, 'latency': np.int64(83568473), 'queuing_delay': np.int64(956667), 'TTFT': np.int64(6597503), 'TPOT': np.int64(6964039)}
+{'id': 4, 'model': 'gpt3-6.7b', 'input': np.int64(13), 'output': np.int64(109), 'arrival': np.int64(587870263), 'end_time': 1235471918, 'latency': np.int64(647601655), 'queuing_delay': np.int64(3519878), 'TTFT': np.int64(10867900), 'TPOT': np.int64(6745850)}
+{'id': 5, 'model': 'gpt3-6.7b', 'input': np.int64(15), 'output': np.int64(78), 'arrival': np.int64(604829893), 'end_time': 1040819657, 'latency': np.int64(435989764), 'queuing_delay': np.int64(227491), 'TTFT': np.int64(8649054), 'TPOT': np.int64(6920472)}
+{'id': 6, 'model': 'gpt3-6.7b', 'input': np.int64(15), 'output': np.int64(99), 'arrival': np.int64(610813769), 'end_time': 1178426199, 'latency': np.int64(567612430), 'queuing_delay': np.int64(2665178), 'TTFT': np.int64(11605308), 'TPOT': np.int64(6757290)}
+{'id': 7, 'model': 'gpt3-6.7b', 'input': np.int64(2), 'output': np.int64(11), 'arrival': np.int64(811936856), 'end_time': 875317163, 'latency': np.int64(63380307), 'queuing_delay': np.int64(4094357), 'TTFT': np.int64(12500883), 'TPOT': np.int64(7042256)}
+{'id': 8, 'model': 'gpt3-6.7b', 'input': np.int64(18), 'output': np.int64(76), 'arrival': np.int64(903845071), 'end_time': 1285656942, 'latency': np.int64(381811871), 'queuing_delay': np.int64(6122136), 'TTFT': np.int64(14019041), 'TPOT': np.int64(6582963)}
+{'id': 9, 'model': 'gpt3-6.7b', 'input': np.int64(5), 'output': np.int64(31), 'arrival': np.int64(1026970077), 'end_time': 1198915620, 'latency': np.int64(171945543), 'queuing_delay': np.int64(5940407), 'TTFT': np.int64(13849580), 'TPOT': np.int64(6613290)}
+---------------------------
+Throughput Results
+---------------------------
+Total prompts: 120 tokens
+Total generation: 591 tokens
+Throughput per 0.5 sec: [(np.float64(96.0), 196.0), (np.float64(134.0), 700.0), (np.float64(10.0), 286.0)]
+Total clocks: 1285656942 ticks
+Total latency: 1.285656942 s
+Average prompt throughput: 93.337496247891 token/s
+Average generation throughput: 459.68716902086317 token/s
+Requests per second: 7.778124687324249 request/s
+---------------------------
+Saving each request's information to output file: output/example_run.csv

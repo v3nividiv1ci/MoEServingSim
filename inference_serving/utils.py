@@ -162,6 +162,9 @@ def getConfig(model):
         n_layer = 80
         n_head = 64
         vocab_size = 32000
+    elif model == 'moe-1.5b':
+        # TODO (6031):add moe-1.5b config
+        pass
     else:
         print(f"ERROR: Utils: no model named {model} configured")
         return 0, 0, 0, 0

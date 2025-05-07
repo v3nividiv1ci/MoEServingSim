@@ -21,6 +21,7 @@ def generateTrace(batch, hardware, npu_num, npu_group, fp=16):
     evict_size = batch.evict
 
     input_len = batch.input
+    print(f"batch.batch_id: {batch.batch_id}, input_len: {input_len}")
     parallel = 'hybrid' # default
     attn = []
     init = []
@@ -143,6 +144,10 @@ def synthsizeTrace(hardware, model, total_len, attn, init, output_path, tp, fp=2
         lm_input, lm_weight, lm_output = calculateSizes(model, lm_matching_row["layer_name"].values[0], total_len)  
         f.write(formatter(str(lm_matching_row["layer_name"].values[0]), str(lm_matching_row['latency(ns)'].values[0]), 'REMOTE', str(lm_input), 'LOCAL', str(lm_weight), 'REMOTE', str(lm_output), 'NONE', '0', 'NONE', 'hybrid'))
         f.flush()
+
+        # TODO (6031): add moe layer
+        # add moe layer
+        # add gate layer
 
 
 # generate event for first request arrival
