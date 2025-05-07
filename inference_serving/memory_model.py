@@ -43,11 +43,11 @@ class MemoryModel():
         _, attn_dns, _ = calculateSizes(self.model, 'attention/dense', 1)
         block_weight += attn_dns
         # mlp fc
-        _, mlp_fc, _ = calculateSizes(self.model, 'mlp/fc', 1)
-        block_weight += mlp_fc
+        _, moe_fc, _ = calculateSizes(self.model, 'mlp/fc', 1)
+        block_weight += moe_fc
         # mlp proj
-        _, mlp_proj, _ = calculateSizes(self.model, 'mlp/proj', 1)
-        block_weight += mlp_proj
+        _, moe_proj, _ = calculateSizes(self.model, 'mlp/proj', 1)
+        block_weight += moe_proj
         # post layernorm
         _, post_ln, _ = calculateSizes(self.model, 'post_layernorm', 1)
         block_weight += post_ln
@@ -139,7 +139,7 @@ class MemoryModel():
 
 # calculate the input, weight, output size of each layer
 # this function follows gpt model architecture, change it as needed
-def calculateSizes(model, layer_name, length, init=False, fp=2):
+def calculateSizes(model, layer_name, length, init=False, fp=16):
     n_embd, n_layer, n_head, vocab_size = getConfig(model)
     if layer_name == "vocab_embedding":
         input_size = length * fp
@@ -182,6 +182,17 @@ def calculateSizes(model, layer_name, length, init=False, fp=2):
         input_size = length * n_embd * fp
         weight_size = n_embd * vocab_size * fp
         output_size = length * vocab_size * fp
+    elif layer_name == "gating":
+        input_size = length * n_embd * fp
+        weight_size = n_embd * 8 * fp # Placeholder: n_embd -> 8 "experts" for weight calc, minimal
+        output_size = length * n_embd * fp 
+    elif layer_name == "moe_ffn":
+        input_size = length * n_embd * fp
+        # Placeholder: weight of a standard-like FFN block
+        ffn_intermediate_hidden_size = n_embd * 4 
+        weight_size = (n_embd * ffn_intermediate_hidden_size * fp) + \
+                      (ffn_intermediate_hidden_size * n_embd * fp)
+        output_size = length * n_embd * fp
     else:
         print("ERROR: calculateSizes: No matching layer name")
         input_size = 0

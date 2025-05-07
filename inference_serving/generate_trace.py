@@ -113,22 +113,32 @@ def synthsizeTrace(hardware, model, total_len, attn, init, output_path, tp, fp=2
             attn_comm_type = 'ALLREDUCE'
         block_res.append(formatter(str(attn_dns_matching_row["layer_name"].values[0]), str(attn_dns_matching_row['latency(ns)'].values[0]), 'REMOTE', str(attn_input), 'LOCAL', str(attn_weight), 'REMOTE', str(attn_output), attn_comm_type, str(attn_comm_size), 'NONE', 'hybrid'))
 
-        # add FFN layer
-        fc_matching_row = df[(df['model'] == model) & (df['hardware'] == hardware) & (df['input'] == total_len) & (df['kv_cache'] == 0) & (df['layer_name'] == "mlp/fc")]
-        fc_input, fc_weight, fc_output = calculateSizes(model, fc_matching_row["layer_name"].values[0], total_len)
-        block_res.append(formatter(str(fc_matching_row["layer_name"].values[0]), str(fc_matching_row['latency(ns)'].values[0]), 'REMOTE', str(fc_input), 'LOCAL', str(fc_weight), 'REMOTE', str(fc_output), 'NONE', '0', 'NONE', 'hybrid'))
-        gelu_matching_row = df[(df['model'] == model) & (df['hardware'] == hardware) & (df['input'] == total_len) & (df['kv_cache'] == 0) & (df['layer_name'] == "mlp/gelu")]
-        gelu_input, gelu_weight, gelu_output = calculateSizes(model, gelu_matching_row["layer_name"].values[0], total_len)
-        block_res.append(formatter(str(gelu_matching_row["layer_name"].values[0]), str(gelu_matching_row['latency(ns)'].values[0]), 'REMOTE', str(gelu_input), 'LOCAL', str(gelu_weight), 'REMOTE', str(gelu_output), 'NONE', '0', 'NONE', 'hybrid'))
-        proj_matching_row = df[(df['model'] == model) & (df['hardware'] == hardware) & (df['input'] == total_len) & (df['kv_cache'] == 0) & (df['layer_name'] == "mlp/proj")]
-        proj_input, proj_weight, proj_output = calculateSizes(model, proj_matching_row["layer_name"].values[0], total_len)
-        # tensor parallelism synchronization (ALLREDUCE)
-        proj_comm_size = 0
-        proj_comm_type = 'NONE' 
-        if tp:
-            proj_comm_size = proj_output
-            proj_comm_type = 'ALLREDUCE'
-        block_res.append(formatter(str(proj_matching_row["layer_name"].values[0]), str(proj_matching_row['latency(ns)'].values[0]), 'REMOTE', str(proj_input), 'LOCAL', str(proj_weight), 'REMOTE', str(proj_output), proj_comm_type, str(proj_comm_size), 'NONE', 'hybrid'))
+##        # Add FFN layer or MoE layers
+            # MoE FFN part
+            # Add gating layer
+            # Use input=1, kv_cache=1 for CSV lookup as per user example for these MoE layers
+        gating_matching_row = df[(df['model'] == model) & (df['hardware'] == hardware) & (df['input'] == 1) & (df['kv_cache'] == 1) & (df['layer_name'] == "gating")]
+        if gating_matching_row.empty:
+            print(f"ERROR: No matching row for gating layer in {hardware}.csv for model {model} with input=1, kv_cache=1. Trace might be incorrect.")
+            # Potentially add a dummy entry or skip, depending on desired error handling
+        else:
+            gating_input, gating_weight, gating_output = calculateSizes(model, "gating", total_len, fp=fp) 
+            block_res.append(formatter("gating", str(gating_matching_row['latency(ns)'].values[0]), 'REMOTE', str(gating_input), 'LOCAL', str(gating_weight), 'REMOTE', str(gating_output), 'NONE', '0', 'NONE', 'hybrid'))
+
+            # Add moe_ffn layer
+        moe_ffn_matching_row = df[(df['model'] == model) & (df['hardware'] == hardware) & (df['input'] == 1) & (df['kv_cache'] == 1) & (df['layer_name'] == "moe_ffn")]
+        if moe_ffn_matching_row.empty:
+            print(f"ERROR: No matching row for moe_ffn layer in {hardware}.csv for model {model} with input=1, kv_cache=1. Trace might be incorrect.")
+        else:
+            moe_ffn_input, moe_ffn_weight, moe_ffn_output = calculateSizes(model, "moe_ffn", total_len, fp=fp)
+            moe_ffn_comm_size = 0
+            moe_ffn_comm_type = 'NONE'
+            if tp:
+                moe_ffn_comm_size = moe_ffn_output 
+                moe_ffn_comm_type = 'ALLREDUCE'
+            block_res.append(formatter("moe_ffn", str(moe_ffn_matching_row['latency(ns)'].values[0]), 'REMOTE', str(moe_ffn_input), 'LOCAL', str(moe_ffn_weight), 'REMOTE', str(moe_ffn_output), moe_ffn_comm_type, str(moe_ffn_comm_size), 'NONE', 'hybrid'))
+##   
+    
         post_ln_matching_row = df[(df['model'] == model) & (df['hardware'] == hardware) & (df['input'] == total_len) & (df['kv_cache'] == 0) & (df['layer_name'] == "post_layernorm")]
         post_ln_input, post_ln_weight, post_ln_output = calculateSizes(model, post_ln_matching_row["layer_name"].values[0], total_len)
         block_res.append(formatter(str(post_ln_matching_row["layer_name"].values[0]), str(post_ln_matching_row['latency(ns)'].values[0]), 'REMOTE', str(post_ln_input), 'LOCAL', str(post_ln_weight), 'REMOTE', str(post_ln_output), 'NONE', '0', 'NONE', 'hybrid'))
@@ -145,7 +155,7 @@ def synthsizeTrace(hardware, model, total_len, attn, init, output_path, tp, fp=2
         f.write(formatter(str(lm_matching_row["layer_name"].values[0]), str(lm_matching_row['latency(ns)'].values[0]), 'REMOTE', str(lm_input), 'LOCAL', str(lm_weight), 'REMOTE', str(lm_output), 'NONE', '0', 'NONE', 'hybrid'))
         f.flush()
 
-        # TODO (6031): add moe layer
+        # TODO (6031): add moe layer # This original TODO is now handled by the conditional FFN/MoE logic above.
         # add moe layer
         # add gate layer
 
