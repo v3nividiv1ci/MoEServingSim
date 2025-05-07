@@ -162,7 +162,7 @@ def getConfig(model):
         n_layer = 80
         n_head = 64
         vocab_size = 32000
-    elif model == 'qwen1.5-2.7b-moe': # qwen-1.5 alias
+    elif model == 'qwen2-moe': # qwen-1.5 alias
         n_embd = 4096       # Base from gpt3-6.7b
         n_layer = 32        # Base from gpt3-6.7b
         n_head = 32         # Base from gpt3-6.7b

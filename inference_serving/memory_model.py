@@ -24,7 +24,7 @@ class MemoryModel():
 
     # get weight of the model 
     def getWeight(self):
-        cwd = os.getcwd()
+        # cwd = os.getcwd() # Not used
         weight = 0
 
         # embedding
@@ -42,12 +42,23 @@ class MemoryModel():
         # attention dense
         _, attn_dns, _ = calculateSizes(self.model, 'attention/dense', 1)
         block_weight += attn_dns
-        # mlp fc
-        _, moe_fc, _ = calculateSizes(self.model, 'mlp/fc', 1)
-        block_weight += moe_fc
-        # mlp proj
-        _, moe_proj, _ = calculateSizes(self.model, 'mlp/proj', 1)
-        block_weight += moe_proj
+        # attention/rotary_emb has no weight, so it's not added here.
+
+        _, moe_gate_w, _ = calculateSizes(self.model, 'moe/gate', 1)
+        block_weight += moe_gate_w
+        _, moe_experts_w, _ = calculateSizes(self.model, 'moe/experts', 1)
+        block_weight += moe_experts_w
+        _, moe_shared_expert_gate_w, _ = calculateSizes(self.model, 'moe/shared_expert_gate', 1)
+        block_weight += moe_shared_expert_gate_w
+        _, moe_shared_expert_w, _ = calculateSizes(self.model, 'moe/shared_expert', 1)
+        block_weight += moe_shared_expert_w
+        # Standard FFN layers for other models
+        _, mlp_fc_w, _ = calculateSizes(self.model, 'mlp/fc', 1)
+        block_weight += mlp_fc_w
+        # mlp/gelu has no weight, so it's not added here.
+        _, mlp_proj_w, _ = calculateSizes(self.model, 'mlp/proj', 1)
+        block_weight += mlp_proj_w
+        
         # post layernorm
         _, post_ln, _ = calculateSizes(self.model, 'post_layernorm', 1)
         block_weight += post_ln
@@ -141,6 +152,12 @@ class MemoryModel():
 # this function follows gpt model architecture, change it as needed
 def calculateSizes(model, layer_name, length, init=False, fp=16):
     n_embd, n_layer, n_head, vocab_size = getConfig(model)
+
+    # MoE specific parameters for qwen2-moe (ideally from getConfig)
+    num_total_experts = 60
+    ffn_intermediate_factor = 4 # For FFN hidden size calculation (e.g., 4 * n_embd)
+    # num_shared_experts = 1 # Assuming one shared expert
+
     if layer_name == "vocab_embedding":
         input_size = length * fp
         weight_size = vocab_size * n_embd * fp
@@ -166,6 +183,10 @@ def calculateSizes(model, layer_name, length, init=False, fp=16):
             input_size = (2 * length + 1) * n_embd * fp # Q (1) + K (kv len) + V (kv len)
             weight_size = 0
             output_size = 1 * n_embd * fp
+    elif layer_name == "attention/rotary_emb": # New layer
+        input_size = length * n_embd * fp # Applied to Q and K, which are n_embd
+        weight_size = 0 # Rotary embeddings are typically computed, not stored as weights
+        output_size = length * n_embd * fp
     elif layer_name == "mlp/fc":
         input_size = length * n_embd * fp
         weight_size = n_embd * (4 * n_embd) * fp
@@ -182,16 +203,24 @@ def calculateSizes(model, layer_name, length, init=False, fp=16):
         input_size = length * n_embd * fp
         weight_size = n_embd * vocab_size * fp
         output_size = length * vocab_size * fp
-    elif layer_name == "gating":
+    elif layer_name == "moe/gate": # New MoE layer (replaces old 'gating')
         input_size = length * n_embd * fp
-        weight_size = n_embd * 8 * fp # Placeholder: n_embd -> 8 "experts" for weight calc, minimal
-        output_size = length * n_embd * fp 
-    elif layer_name == "moe_ffn":
+        weight_size = n_embd * num_total_experts * fp 
+        output_size = length * num_total_experts * fp # Output are logits for experts
+    elif layer_name == "moe/experts": # New MoE layer (replaces old 'moe_ffn') - represents all non-shared experts
+        ffn_hidden_size = n_embd * ffn_intermediate_factor
+        weight_one_expert = (n_embd * ffn_hidden_size + ffn_hidden_size * n_embd) * fp
+        weight_size = num_total_experts * weight_one_expert
+        input_size = length * n_embd * fp # Input to the MoE block
+        output_size = length * n_embd * fp # Output from the MoE block
+    elif layer_name == "moe/shared_expert_gate": # New MoE layer
         input_size = length * n_embd * fp
-        # Placeholder: weight of a standard-like FFN block
-        ffn_intermediate_hidden_size = n_embd * 4 
-        weight_size = (n_embd * ffn_intermediate_hidden_size * fp) + \
-                      (ffn_intermediate_hidden_size * n_embd * fp)
+        weight_size = n_embd * 1 * fp # Assuming gate for one shared expert
+        output_size = length * 1 * fp 
+    elif layer_name == "moe/shared_expert": # New MoE layer
+        ffn_hidden_size = n_embd * ffn_intermediate_factor
+        weight_size = (n_embd * ffn_hidden_size + ffn_hidden_size * n_embd) * fp # Weight of one shared FFN
+        input_size = length * n_embd * fp
         output_size = length * n_embd * fp
     else:
         print("ERROR: calculateSizes: No matching layer name")
@@ -199,6 +228,5 @@ def calculateSizes(model, layer_name, length, init=False, fp=16):
         weight_size = 0
         output_size = 0
 
-    # TODO (6031):add moe
     
     return input_size, weight_size, output_size
