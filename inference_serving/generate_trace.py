@@ -151,68 +151,6 @@ def synthsizeTrace(hardware, model, total_len, attn, init, output_path, tp, fp=2
                 proj_comm_size = proj_output # comm_size in bits
                 proj_comm_type = 'ALLREDUCE'
             block_res.append(formatter(str(proj_matching_row["layer_name"].values[0]), str(proj_matching_row['latency(ns)'].values[0]), 'REMOTE', str(proj_input), 'LOCAL', str(proj_weight), 'REMOTE', str(proj_output), proj_comm_type, str(proj_comm_size), 'NONE', 'hybrid'))
-        else:
-            print(f"ERROR: No matching row for FFN layer {proj_layer_name} in {hardware}.csv for model {model} with input={total_len}, kv_cache=0. Trace might be incorrect.")
-
-        # Additional MoE Layers for qwen2-moe model
-            # moe/gate
-        moe_gate_layer_name = "moe/gate"
-        moe_gate_csv_input = 5
-        moe_gate_csv_kv_cache = 0
-        moe_gate_matching_row = df[(df['model'] == model) & (df['hardware'] == hardware) & (df['input'] == moe_gate_csv_input) & (df['kv_cache'] == moe_gate_csv_kv_cache) & (df['layer_name'] == moe_gate_layer_name)]
-        if not moe_gate_matching_row.empty:
-            mg_input, mg_weight, mg_output = calculateSizes(model, moe_gate_layer_name, total_len)
-            mg_comm_size = 0
-            mg_comm_type = 'NONE'
-            block_res.append(formatter(str(moe_gate_matching_row["layer_name"].values[0]), str(moe_gate_matching_row['latency(ns)'].values[0]), 'REMOTE', str(mg_input), 'LOCAL', str(mg_weight), 'REMOTE', str(mg_output), mg_comm_type, str(mg_comm_size), 'NONE', 'hybrid'))
-        else:
-            print(f"ERROR: No matching row for MoE layer {moe_gate_layer_name} in {hardware}.csv for model {model} with input={moe_gate_csv_input}, kv_cache={moe_gate_csv_kv_cache}. Trace might be incorrect.")
-
-            # moe/experts
-        moe_experts_layer_name = "moe/experts"
-        moe_experts_csv_input = 5
-        moe_experts_csv_kv_cache = 0
-        moe_experts_matching_row = df[(df['model'] == model) & (df['hardware'] == hardware) & (df['input'] == moe_experts_csv_input) & (df['kv_cache'] == moe_experts_csv_kv_cache) & (df['layer_name'] == moe_experts_layer_name)]
-        if not moe_experts_matching_row.empty:
-            me_input, me_weight, me_output = calculateSizes(model, moe_experts_layer_name, total_len)
-            me_comm_size = 0
-            me_comm_type = 'NONE'
-            if tp:
-                me_comm_size = me_output # comm_size in bits
-                me_comm_type = 'ALLREDUCE'
-            block_res.append(formatter(str(moe_experts_matching_row["layer_name"].values[0]), str(moe_experts_matching_row['latency(ns)'].values[0]), 'REMOTE', str(me_input), 'LOCAL', str(me_weight), 'REMOTE', str(me_output), me_comm_type, str(me_comm_size), 'NONE', 'hybrid'))
-        else:
-            print(f"ERROR: No matching row for MoE layer {moe_experts_layer_name} in {hardware}.csv for model {model} with input={moe_experts_csv_input}, kv_cache={moe_experts_csv_kv_cache}. Trace might be incorrect.")
-
-            # moe/shared_expert_gate
-        moe_sg_layer_name = "moe/shared_expert_gate"
-        moe_sg_csv_input = 5
-        moe_sg_csv_kv_cache = 0
-        moe_sg_matching_row = df[(df['model'] == model) & (df['hardware'] == hardware) & (df['input'] == moe_sg_csv_input) & (df['kv_cache'] == moe_sg_csv_kv_cache) & (df['layer_name'] == moe_sg_layer_name)]
-        if not moe_sg_matching_row.empty:
-            msg_input, msg_weight, msg_output = calculateSizes(model, moe_sg_layer_name, total_len)
-            msg_comm_size = 0
-            msg_comm_type = 'NONE'
-            block_res.append(formatter(str(moe_sg_matching_row["layer_name"].values[0]), str(moe_sg_matching_row['latency(ns)'].values[0]), 'REMOTE', str(msg_input), 'LOCAL', str(msg_weight), 'REMOTE', str(msg_output), msg_comm_type, str(msg_comm_size), 'NONE', 'hybrid'))
-        else:
-            print(f"ERROR: No matching row for MoE layer {moe_sg_layer_name} in {hardware}.csv for model {model} with input={moe_sg_csv_input}, kv_cache={moe_sg_csv_kv_cache}. Trace might be incorrect.")
-
-            # moe/shared_expert
-        moe_se_layer_name = "moe/shared_expert"
-        moe_se_csv_input = 5
-        moe_se_csv_kv_cache = 0
-        moe_se_matching_row = df[(df['model'] == model) & (df['hardware'] == hardware) & (df['input'] == moe_se_csv_input) & (df['kv_cache'] == moe_se_csv_kv_cache) & (df['layer_name'] == moe_se_layer_name)]
-        if not moe_se_matching_row.empty:
-            mse_input, mse_weight, mse_output = calculateSizes(model, moe_se_layer_name, total_len)
-            mse_comm_size = 0
-            mse_comm_type = 'NONE'
-            if tp:
-                mse_comm_size = mse_output # comm_size in bits
-                mse_comm_type = 'ALLREDUCE'
-            block_res.append(formatter(str(moe_se_matching_row["layer_name"].values[0]), str(moe_se_matching_row['latency(ns)'].values[0]), 'REMOTE', str(mse_input), 'LOCAL', str(mse_weight), 'REMOTE', str(mse_output), mse_comm_type, str(mse_comm_size), 'NONE', 'hybrid'))
-        else:
-            print(f"ERROR: No matching row for MoE layer {moe_se_layer_name} in {hardware}.csv for model {model} with input={moe_se_csv_input}, kv_cache={moe_se_csv_kv_cache}. Trace might be incorrect.")
-
         post_ln_matching_row = df[(df['model'] == model) & (df['hardware'] == hardware) & (df['input'] == total_len) & (df['kv_cache'] == 0) & (df['layer_name'] == "post_layernorm")]
         post_ln_input, post_ln_weight, post_ln_output = calculateSizes(model, post_ln_matching_row["layer_name"].values[0], total_len)
         block_res.append(formatter(str(post_ln_matching_row["layer_name"].values[0]), str(post_ln_matching_row['latency(ns)'].values[0]), 'REMOTE', str(post_ln_input), 'LOCAL', str(post_ln_weight), 'REMOTE', str(post_ln_output), 'NONE', '0', 'NONE', 'hybrid'))
@@ -228,10 +166,6 @@ def synthsizeTrace(hardware, model, total_len, attn, init, output_path, tp, fp=2
         lm_input, lm_weight, lm_output = calculateSizes(model, lm_matching_row["layer_name"].values[0], total_len)  
         f.write(formatter(str(lm_matching_row["layer_name"].values[0]), str(lm_matching_row['latency(ns)'].values[0]), 'REMOTE', str(lm_input), 'LOCAL', str(lm_weight), 'REMOTE', str(lm_output), 'NONE', '0', 'NONE', 'hybrid'))
         f.flush()
-
-        # TODO (6031): add moe layer # This original TODO is now handled by the conditional FFN/MoE logic above.
-        # add moe layer
-        # add gate layer
 
 
 # generate event for first request arrival

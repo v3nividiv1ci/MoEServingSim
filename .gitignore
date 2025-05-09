@@ -7,3 +7,5 @@ __pycache__/
 
 # Ignore Anaconda
 Anaconda3*.sh
+
+output/*.log
