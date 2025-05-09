@@ -2,6 +2,16 @@
 
 **Members:** Ye Wang, Danyang Chen
 
+## Quick Start
+### 1. Build
+See [build-llmservingsim](https://github.com/casys-kaist/LLMServingSim?tab=readme-ov-file#build-llmservingsim).
+
+### 2. Run
+```bash
+./run_moe.sh
+```
+
+
 ## Abstract
 
 This project supports Mixture-of-Experts (MoE) architecture LLM. By incorporating new trace construction, memory modeling, and communication logic, we extended LLMServingSim to simulate modern sparse models like Qwen2-MoE. Experiments show insights into how bandwidth, memory, and scheduling affect performance.
